@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Court &amp; Fairway</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Court &amp; Fairway">
+<meta name="theme-color" content="#0C1116">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icons/icon-120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/icon-152.png">
+<link rel="apple-touch-icon" sizes="167x167" href="icons/icon-167.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="app" id="app">
+  <header class="hdr">
+    <div class="hdr-title">COURT &amp; FAIRWAY</div>
+    <div class="hdr-right">
+      <span id="offlineDot" class="offdot" hidden>OFFLINE</span>
+      <button id="themeBtn" class="iconbtn" aria-label="Toggle theme">◐</button>
+    </div>
+  </header>
+  <main id="view" class="view"></main>
+  <div id="toast" class="toast" hidden></div>
+  <nav class="tabbar" id="tabbar">
+    <button data-tab="today"><span class="ti">▶</span>Today</button>
+    <button data-tab="history"><span class="ti">▤</span>History</button>
+    <button data-tab="library"><span class="ti">≡</span>Library</button>
+    <button data-tab="program"><span class="ti">◔</span>Program</button>
+    <button data-tab="settings"><span class="ti">⚙</span>More</button>
+  </nav>
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
